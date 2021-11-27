@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { courses } from '../courses';
+import { CartService } from '../cart.service';
+
+
 
 @Component({
   selector: 'cart',
@@ -8,9 +11,14 @@ import { courses } from '../courses';
 })
 export class CartComponent implements OnInit {
   courses = courses
-  constructor() { }
-
+  constructor(private CS:CartService) { }
+  course:any
+  removeCourse(i:number){
+    this.courses[i].remove()
+  }
+  
   ngOnInit(): void {
+    
   }
 
 }
