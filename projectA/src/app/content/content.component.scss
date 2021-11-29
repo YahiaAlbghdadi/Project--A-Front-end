@@ -17,6 +17,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
+    transition: all .2s linear;
 }
 
 *::selection {
@@ -160,18 +161,6 @@ header label {
 }
 
 // <!-- gallery  -->
-* {
-    // font-family: 'Nunito', sans-serif;
-    // margin: 0;
-    // padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
-}
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;

@@ -1,155 +1,150 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-:root {
-    --purple: #814096;
-    --pink: rgb(0, 176, 255);
-    --gradient: linear-gradient(90deg, var(--purple), var(--pink));
-}
-
-* {
-    // font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-}
-
-*::selection {
-    background: var(--pink);
-    color: #fff;
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-body {
-    background: #ffffff;
-}
-
-section {
-    // background-color: rgba(129, 206, 196, 0.145);
-    min-height: 100vh;
-    padding: 0 9%;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
-}
-
-.about .heading {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(69, 167, 189);
-}
-
-.about .column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.about .column .image {
-    padding-right: 20px;
-    flex: 1 1 40rem;
-}
-
-.about .column .image img {
-    width: 100%;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
-.about .column .content {
-    padding: 20px;
-    flex: 1 1 40rem;
-    background-color: rgba(129, 206, 196, 0.179);
-    border-radius: 10px;
-}
-
-.about .column .content .buttons a {
-    font-size: 15px;
-}
-
-.about .column .content h3 {
-    font-size: 3rem;
-    color: #666;
-}
-
-.about .column .content p {
-    font-size: 1.5rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.about .column .content .buttons a:last-child {
-    margin-left: 2rem;
-}
-
-.about .links .serv {
-    font-weight: bold;
-    font-size: 30px;
-    color: darkslategrey
-}
-
-.about .links .per {
-    color: darkslategrey;
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-.about .links #bank {
-    padding-top: 20px;
-}
-
-.about .we .links {
-    padding: 30px;
-    border-radius: 10px;
-    margin-right: 50px;
-    width: 550px;
-    background-color: rgba(129, 206, 196, 0.179);
-}
-
-.about .we .links p {
-    padding-bottom: 12px;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.about .we .zeit {
-    padding: 50px;
-    border-radius: 10px;
-    width: 600px;
-    background-color: rgba(129, 206, 196, 0.179);
-}
-
-.about .we .zeit .zahlung {
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 30px;
-}
-
-.about .we .zeit h1 {
-    font-weight: bold;
-    font-size: 25px;
-    padding-bottom: 20px;
-    color: darkslategrey;
-}
-
-.about .we .zeit p {
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-
-.we {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+    }
+    
+    *::selection {
+        background: var(--pink);
+        color: #fff;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        background: #ffffff;
+    }
+    
+    section {
+        min-height: 100vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .about .heading {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(69, 167, 189);
+    }
+    
+    .about .column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .about .column .image {
+        padding-right: 20px;
+        flex: 1 1 40rem;
+    }
+    
+    .about .column .image img {
+        width: 100%;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+    
+    .about .column .content {
+        padding: 20px;
+        flex: 1 1 40rem;
+        background-color: rgba(129, 206, 196, 0.179);
+        border-radius: 10px;
+    }
+    
+    .about .column .content .buttons a {
+        font-size: 15px;
+    }
+    
+    .about .column .content h3 {
+        font-size: 3rem;
+        color: #666;
+    }
+    
+    .about .column .content p {
+        font-size: 1.5rem;
+        color: #666;
+        padding: 1rem 0;
+    }
+    
+    .about .column .content .buttons a:last-child {
+        margin-left: 2rem;
+    }
+    
+    .about .we {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .about .links .serv {
+        font-weight: bold;
+        font-size: 30px;
+        color: darkslategrey
+    }
+    
+    .about .links .per {
+        color: darkslategrey;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    
+    .about .links #bank {
+        padding-top: 20px;
+    }
+    
+    .about .we .links {
+        margin: 10px;
+        flex: 1 1 40rem;
+        padding: 30px;
+        border-radius: 10px;
+        width: 570px;
+        background-color: rgba(129, 206, 196, 0.179);
+    }
+    
+    .about .we .links p {
+        padding-bottom: 12px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .about .we .zeit {
+        margin: 10px;
+        flex: 1 1 40rem;
+        padding: 30px;
+        border-radius: 10px;
+        width: 570px;
+        background-color: rgba(129, 206, 196, 0.179);
+    }
+    
+    .about .we .zeit .zahlung {
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    
+    .about .we .zeit h1 {
+        font-weight: bold;
+        font-size: 25px;
+        padding-bottom: 20px;
+        color: darkslategrey;
+    }
+    
+    .about .we .zeit p {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
