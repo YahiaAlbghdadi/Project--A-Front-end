@@ -1,4 +1,41 @@
-.cartItem {
+.cartDiv {
     background: #3E4A61;
     color: white;
+    max-height: 200px;
+    max-width: 500px;
+    font-size: 20px;
+}
+
+.test {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.totalDiv {
+    margin: 10px auto;
+}
+
+.header {
+    font-size: 50px;
+    color: rgb(0, 176, 255);
+}
+
+@media only screen and (max-width: 800px) {
+    .mainDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cartDiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .cartDiv {
+        width: 550px;
+        height: 180px;
+    }
 }

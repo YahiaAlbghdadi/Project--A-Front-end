@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
   cart:any=[]
+  sum:number=0
   constructor() { }
 
   addToCart(course:any){
@@ -17,6 +18,17 @@ export class CartService {
 
   cleanCart(){
     return this.cart = []
+  }
+
+  removeFromCart(course:any){
+    this.cart.pull(course)
+  }
+
+  sumPrices(){
+    for(let offer of this.cart){
+      this.sum += offer.price
+    }
+    return this.sum
   }
 
 }

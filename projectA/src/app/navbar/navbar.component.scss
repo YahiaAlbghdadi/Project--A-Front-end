@@ -1,21 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Montserrat&family=Raleway:wght@100&display=swap');
 .navDiv {
     background: #d9dad7;
-    color: white;
     text-decoration: none;
     padding: 20px;
 }
 
 .logo {
-    max-width: 4em;
-    max-height: 4em;
+    max-width: 6em;
+    max-height: 6em;
     border-radius: 30px;
     align-items: center;
+    margin-top: 10px;
+    border: 2px solid rgb(51, 102, 126);
+    ;
 }
 
 .nav-link {
     color: #1A2639;
 }
 
-// .nav-item {
-//     font-size: 20px;
-// }
+.cartIcon {
+    color: rgb(0, 176, 255);
+}
+
+.nav-link {
+    color: rgb(51, 102, 126);
+    font-size: 30px;
+    font-family: 'Estonia', cursive;
+}

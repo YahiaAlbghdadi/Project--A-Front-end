@@ -1,14 +1,15 @@
-<div class="container row justify-content-center">
-    <h1>Courses Cart</h1>
-    <div class="col col-auto col-lg-5 col-md-12 col-sm-12 row p-3 border m-3 cartItem">
+<h1 class="text-center header m-5">Courses Cart</h1>
+
+<div class="container d-flex -column justify-content-center mainDiv p-4">
+    <div class="d-flex justify-content-center p-3 border cartDiv m-4 flex-direction">
         <img src="https://img-c.udemycdn.com/course/100x100/260490_ee05_6.jpg" class="col-3  rounded p-0" alt="">
         <div class="col-9 ">
             <p>lenguage + Intro & basic</p>
             <p>Price</p>
             <br>
 
-            <div class="offset-lg-4 offset-md-6  ">
-                <button class="btn btn-danger col p-2 me-2">
+            <div class=" ">
+                <button class="btn btn-danger col p-2 me-2 ">
                     Remove Course
                 </button>
                 <button class="btn btn-success col p-2">Buy now</button>
@@ -17,20 +18,48 @@
         </div>
     </div>
 
-    <div class="col col-auto col-lg-5 col-md-12 col-sm-12 row p-3 border m-3 cartItem">
+    <div class="d-flex p-3 border cartDiv m-4 flex-direction">
         <img src="https://img-c.udemycdn.com/course/100x100/260490_ee05_6.jpg" class="col-3  rounded p-0" alt="">
         <div class="col-9 ">
             <p>lenguage + Intro & basic</p>
             <p>Price</p>
             <br>
 
-            <div class="offset-lg-4 offset-md-6  ">
-                <button class="btn btn-danger col p-2 me-2">
+            <div class=" ">
+                <button class="btn btn-danger col p-2 me-2 ">
                     Remove Course
                 </button>
                 <button class="btn btn-success col p-2">Buy now</button>
             </div>
 
         </div>
+    </div>
+</div>
+<div class="card col-6 totalDiv p-2 ">
+    <h5 class="card-header ">Selected Courses:</h5>
+    <div class="card-body row text-center">
+        <h5 class="card-title col-12 text-warning">
+            Original Price: {{sum | currency}}
+        </h5>
+        <ng-container *ngIf="sum >= 1200;else second">
+            <p class="h2 text-danger">
+                -20%
+            </p>
+            <h4 class="card-title col-12 text-success">
+                Final Price: {{twentyPercent | currency}}
+            </h4>
+        </ng-container>
+        <ng-template #second>
+            <ng-container *ngIf="sum >= 600">
+                <p class="h2 text-danger">
+                    -10%
+                </p>
+                <h4 class="card-title col-12 text-success">
+                    Final Price: {{tenPercent | currency}}
+                </h4>
+            </ng-container>
+        </ng-template>
+
+        <a href="#" (click)="cleanCart()" class="btn btn-primary col-8 col-lg-6 totalDiv">Checkout</a>
     </div>
 </div>
