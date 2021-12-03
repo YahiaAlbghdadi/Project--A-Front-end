@@ -8,8 +8,11 @@
     --gradient: linear-gradient(90deg, var(--purple), var(--pink));
 }
 
+.available {
+    color: #81C784;
+}
+
 * {
-    // font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

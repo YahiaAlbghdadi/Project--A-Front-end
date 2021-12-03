@@ -1,41 +1,39 @@
-.cartDiv {
-    background: #3E4A61;
-    color: white;
-    max-height: 200px;
-    max-width: 500px;
+.cardDiv {
+    width: fit-content;
+    height: fit-content;
+    max-width: 590px;
+    border-radius: 10px;
     font-size: 20px;
 }
 
-.test {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+.cardImg {
+    max-width: 300px;
+    margin: 0px auto;
+}
+
+.description {
+    color: rgb(69, 167, 189);
 }
 
 .totalDiv {
     margin: 10px auto;
 }
 
+.courses {
+    margin: 0px auto;
+}
+
 .header {
-    font-size: 50px;
-    color: rgb(0, 176, 255);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(69, 167, 189);
 }
 
-@media only screen and (max-width: 800px) {
-    .mainDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .cartDiv {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 801px) {
-    .cartDiv {
-        width: 550px;
-        height: 180px;
-    }
+.mainDiv {
+    margin: 0px auto;
+    align-items: center;
+    background: rgb(51, 102, 126);
+    font-size: 2em;
+    padding: 40px;
 }

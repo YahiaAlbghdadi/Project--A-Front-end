@@ -1,1 +1,29 @@
-<p>courses works!</p>
+<h1 class="text-center m-5 header">
+    Our Available Courses
+</h1>
+<div class="row mainDiv center justify-content-center ">
+
+    <div class="col mb-4 col-lg-6 col-md-6 col-sm-12 col-auto d-flex justify-content-center courses mt-4 " *ngFor="let course of courses; index as i">
+        <div class="card cardDiv text-center">
+            <div class="row ">
+                <img src="{{course.img}}" class="card-img-top cardImg p-5 col col-lg-6" alt="...">
+                <div class="card-body col col-lg-6 pt-5">
+                    <h1 class="card-title description">{{course.lenguage}}</h1>
+                    <p class="card-text ">{{course.des}}</p>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush col ">
+                <li class="list-group-item"><span class="description fw-bold">Niveau:</span> {{course.niveau}}</li>
+                <li class="list-group-item"><span class="description fw-bold">Teacher:</span> {{course.Teacher}}</li>
+                <li class="list-group-item"><span class="description fw-bold">Duration:</span> {{course.duration}}</li>
+                <li class="list-group-item"><span class="description fw-bold">Price:</span> {{course.price | currency}}</li>
+            </ul>
+            <div class="card-body pb-4 text-center">
+                <a (click)="addToCart(i)" class="card-link link btn btn-dark">Add to Cart</a>
+                <a routerLink="/cart" class=" btn card-link btn-secondary text-white fw-bolder">Show Cart</a>
+
+            </div>
+        </div>
+    </div>
+
+</div>

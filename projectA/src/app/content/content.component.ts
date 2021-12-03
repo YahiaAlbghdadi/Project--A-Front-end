@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+  outOfStack(){
+    alert("Sorry this Lenguage is not Available right now")
   }
 
 }

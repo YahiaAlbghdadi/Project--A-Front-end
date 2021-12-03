@@ -1,0 +1,38 @@
+.mainDiv {
+    margin: 0px auto;
+    align-items: center;
+    background: #e7f8ee;
+    font-size: 2em;
+    padding: 40px;
+}
+
+.description {
+    color: rgb(69, 167, 189);
+}
+
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(69, 167, 189);
+}
+
+.t {
+    font-size: 100px;
+}
+
+.cardDiv {
+    width: fit-content;
+    height: fit-content;
+    max-width: 590px;
+    border-radius: 10px;
+}
+
+.cardDiv:hover {
+    border: 2px solid rgb(69, 167, 189);
+}
+
+.cardImg {
+    max-width: 300px;
+    margin: 0px auto;
+}

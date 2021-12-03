@@ -1,37 +1,22 @@
-<h1 class="text-center header m-5">Courses Cart</h1>
+<h1 class="text-center header p-5">Courses Cart</h1>
 
-<div class="container d-flex -column justify-content-center mainDiv p-4">
-    <div class="d-flex justify-content-center p-3 border cartDiv m-4 flex-direction">
-        <img src="https://img-c.udemycdn.com/course/100x100/260490_ee05_6.jpg" class="col-3  rounded p-0" alt="">
-        <div class="col-9 ">
-            <p>lenguage + Intro & basic</p>
-            <p>Price</p>
-            <br>
-
-            <div class=" ">
-                <button class="btn btn-danger col p-2 me-2 ">
-                    Remove Course
-                </button>
-                <button class="btn btn-success col p-2">Buy now</button>
+<div class="col mb-4 col-lg-6 col-md-6 col-sm-12 col-auto d-flex justify-content-center courses mt-4 " *ngFor="let course of cart; index as i">
+    <div class="card cardDiv text-center">
+        <div class="row ">
+            <img src="{{course.img}}" class="card-img-top cardImg p-5 col col-lg-6" alt="...">
+            <div class="card-body col col-lg-6 pt-5">
+                <h1 class="card-title description">{{course.lenguage}}</h1>
+                <p class="card-text ">{{course.des}}</p>
             </div>
-
         </div>
-    </div>
-
-    <div class="d-flex p-3 border cartDiv m-4 flex-direction">
-        <img src="https://img-c.udemycdn.com/course/100x100/260490_ee05_6.jpg" class="col-3  rounded p-0" alt="">
-        <div class="col-9 ">
-            <p>lenguage + Intro & basic</p>
-            <p>Price</p>
-            <br>
-
-            <div class=" ">
-                <button class="btn btn-danger col p-2 me-2 ">
-                    Remove Course
-                </button>
-                <button class="btn btn-success col p-2">Buy now</button>
-            </div>
-
+        <ul class="list-group list-group-flush col ">
+            <li class="list-group-item"><span class="description fw-bold">Niveau:</span> {{course.niveau}}</li>
+            <li class="list-group-item"><span class="description fw-bold">Teacher:</span> {{course.Teacher}}</li>
+            <li class="list-group-item"><span class="description fw-bold">Duration:</span> {{course.duration}}</li>
+            <li class="list-group-item"><span class="description fw-bold">Price:</span> {{course.price | currency}}</li>
+        </ul>
+        <div class="card-body pb-4 text-center">
+            <a (click)="removeCourse(i)" class="card-link link btn btn-danger">Remove</a>
         </div>
     </div>
 </div>

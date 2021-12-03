@@ -9,7 +9,6 @@ import { HeroComponent } from './hero/hero.component';
 import { ContentComponent } from './content/content.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FooterComponent } from './footer/footer.component';
-import { CourseDetailsComponent } from './course-details/course-details.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +23,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContentComponent,
     CoursesComponent,
     FooterComponent,
-    CourseDetailsComponent,
     ContactUsComponent,
     AboutUsComponent,
     LoginComponent,
